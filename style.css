@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* Warna cream */
+    color: #001f3f; /* Warna navy */
+    min-height: 100vh; /* Agar body mengisi seluruh viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gaya menu navigasi */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #001f3f; /* Warna navy */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5dc; /* Warna cream */
+    padding: 10px 20px;
+    border-radius: 20px; /* Sudut oval */
+    background-color: rgba(255, 255, 255, 0.2); /* Warna transparan untuk menu */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Warna transparan lebih terang saat hover */
+    transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+/* Style untuk bagian konten */
+#content {
+    flex: 1; /* Konten akan mengisi ruang antara header dan footer */
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icon {
+    width: 40px; /* Ukuran ikon */
+    height: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Efek bayangan */
+}
+
+/* Gaya untuk kartu anggota */
+.member-card {
+    padding: 15px;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna transparan untuk kartu anggota */
+    border: 1px solid #001f3f; /* Warna navy */
+    border-radius: 20px; /* Sudut oval */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    width: 220px; /* Lebar kartu anggota */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.05); /* Efek pembesaran pada hover */
+}
+
+/* Gaya untuk header dan footer */
+h1, h2 {
+    color: #001f3f; /* Warna navy */
+}
+
+/* Gaya untuk tombol */
+button {
+    background-color: #007bff; /* Warna navy muda */
+    color: #f5f5dc; /* Warna cream */
+    border: none; /* Menghilangkan border default */
+    border-radius: 20px; /* Sudut oval */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Pointer saat hover */
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+/* Efek hover untuk tombol */
+button:hover {
+    background-color: #0056b3; /* Warna navy lebih gelap saat hover */
+    transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: #001f3f; /* Warna navy */
+    color: #f5f5dc; /* Warna cream */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gaya untuk biodata anggota agar sejajar dan di tengah */
+.member-details {
+    display: grid;
+    grid-template-columns: 150px auto; /* Lebar kolom pertama untuk label */
+    grid-gap: 10px;
+    margin: 0 auto; /* Untuk sentralisasi */
+    text-align: left;
+    max-width: 400px; /* Batas lebar maksimum untuk detail anggota */
+}
+
+.member-details p {
+    margin: 0;
+}
+
+.member-details .label {
+    text-align: right;
+    font-weight: bold;
+}
+
+.member-details .value {
+    text-align: left;
+}

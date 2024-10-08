@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kelompok Pemrograman Perangkat Bergerak</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="manifest" href="/manifest.json">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#" id="home" onclick="loadHome()">Beranda</a></li>
+                <li><a href="#" id="members" onclick="loadMembersList()">Anggota</a></li>
+                <li><a href="#" id="about" onclick="loadAbout()">Tentang Kami</a></li>
+            </ul>
+        </nav>
+
+        <section id="content">
+            <h1>Selamat Datang</h1>
+            <p>Ini adalah beranda website kelompok kami.</p>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/stmik_tegal?igsh=MXhuaWx4M2w4ODK2/" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube-icon.png" alt="Youtube" class="social-icon">
+                </a>
+            </div>
+        </section>
+
+        <script src="app.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration){
+                        console.log('Service Worker Terdaftar dengan Sukses:', registration);
+                    })
+                    .catch(function(error){
+                        console.log('Service worker gagal didaftarkan:', error);
+                    });
+                });
+            }
+        </script>
+    </body>
+
+    <!--footer-->
+    <footer>
+        <p>&copy; 2024 Kelompok Pemrograman. Semua hak dilindungi</p>
+    </footer>
+    
+    </html>

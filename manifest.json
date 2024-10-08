@@ -1,0 +1,22 @@
+{
+    "name": "Dainty  Divas",
+    "short_name": "Kelompok PBP",
+    "description": "Website sederhana untuk menampilkan anggota kelompok Pemrograman Perangkat Bergerak",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#1b1b1b",
+    "theme_color": "#3a0ca3",
+    "orientation": "potrait",
+    "icons":   [
+        {
+            "src": "/images/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
